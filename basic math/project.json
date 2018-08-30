@@ -1,0 +1,42 @@
+{
+    "$schema": "",
+    "$id":"basic_math",
+    "name":"basic math",
+    "description":"base functionality of lamda-k broker",
+    "endpoint" :
+    {
+        "name":"base math",
+        "properties":[
+            {
+                "name":"result",
+                "type":"decimal"
+            }
+        ],
+        "methods":[
+            {
+                "name":"summ 2 numbers",
+                "input":[
+                    {
+                        "name":"a",
+                        "type":"decimal"
+                    },
+                    {
+                        "name":"b",
+                        "type":"decimal"
+                    }
+                ],
+                "function":"summ.csx"
+            },
+            {
+                "name":"generate random integer",
+                "input":[
+                    {
+                        "name":"maxValue",
+                        "type":"number"
+                    }
+                ],
+                "function":"random.csx"
+            }
+        ]
+    }
+}

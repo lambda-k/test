@@ -1,0 +1,9 @@
+{
+    "$schema": "",
+    "$id":"dynamic_from_repo",
+    "name":"dynamic SB from repo",
+    "description":"dynamic service broker from 'repository class'",
+    "dynamic":true,
+    "entityClass":"JiraRole.cs",
+    "entityRepo":"JiraRoleRepository.cs"
+}
